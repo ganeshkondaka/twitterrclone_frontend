@@ -13,12 +13,13 @@ export default function Signup() {
 
             <div>
                 <form action="">
-                    <input type="text" placeholder="name" />
+                    <input type="text" placeholder="username" />
                     <input type="text" placeholder="email" />
+                    <input type="text" placeholder="password" />
                     <label htmlFor="">Date of birth</label>
                     <label htmlFor="">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</label>
-                    <input type="text" placeholder="Date of birth" />
-
+                    {/* <input type="text" placeholder="Date of birth" /> */}
+                    <button type="submit">Register</button>
                     {/* <span>
                         <select name="" id="">
 

@@ -21,10 +21,10 @@ export default function Homepage() {
             const headers = {
                 Authorization: token,
             };
-            // const response = await axios.get("http://localhost:3000/api/prod/alltweets",{headers});
-            const response = await axios.get("http://localhost:3000/api/prod/alltweets");
+            const response = await axios.get("http://localhost:3000/api/prod/alltweets",{headers});
+            // const response = await axios.get("http://localhost:3000/api/prod/alltweets");
             settweets(response.data.data)
-            console.log(tweets)
+            
 
         } catch (error) {
             console.error('Error fetching chat data:', error);
