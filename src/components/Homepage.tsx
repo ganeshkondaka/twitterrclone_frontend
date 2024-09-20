@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import Posttweet_form from "./Posttweet_form"
 
 interface tweettype {
     id: number,
@@ -8,7 +9,6 @@ interface tweettype {
 }
 
 export default function Homepage() {
-    const [loggedin_user, setloggedin_user] = useState("")
     const [tweets, settweets] = useState<tweettype[]>([])
 
 
@@ -35,6 +35,10 @@ export default function Homepage() {
         fetchdata()
     }, [])
 
+    const addNewTweet = (newtweet:tweettype) => {
+        settweets((prevTweets) => [ ...prevTweets,newtweet]);
+    };
+
     return (
         <div>
             <span></span>
@@ -49,6 +53,7 @@ export default function Homepage() {
                 ))}
 
             </span>
+            <Posttweet_form addNewTweet={addNewTweet}></Posttweet_form>
 
         </div>
     )

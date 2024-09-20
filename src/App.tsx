@@ -12,7 +12,6 @@ function App() {
       {/* <Signup></Signup> */}
       <Signin></Signin>
       <Homepage></Homepage>
-    <Posttweet_form></Posttweet_form>
     </div>
   )
 }
