@@ -30,9 +30,9 @@ export default function Signin() {
     }
 
     return (
-        <div>
-            <div>
-                <img src="../src/assets/xlogo.svg" alt="x logo" />
+        <div className="flex justify-center align-center">
+            <div >
+                <img src=".../src/assets/xlogo.svg" alt="x logo" />
             </div>
 
             <div>

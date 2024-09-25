@@ -1,8 +1,11 @@
 export default function Landingpage() {
+    const movetosignin =()=>{
+        
+    }
     return (
         <div className="flex flex-row bg-slate-950 text-white h-screen">
             <div className="flex justify-center items-center">
-                <img src="../src/assets/xlogo.svg" alt="" className="w-96 h-96" />
+                <img src="../src/assets/xlogo.svg" alt="the x logo" className="w-96 h-96" />
             </div>
             <div className="flex  flex-col items-center justify-center">
                 <span>Happening now</span>
@@ -26,7 +29,7 @@ export default function Landingpage() {
                     <span></span>
                 </span>
 
-                <button type="button" className="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 me-2 mb-2">
+                <button type="button" onClick={movetosignin} className="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 me-2 mb-2">
                     Create account
                 </button>
 
